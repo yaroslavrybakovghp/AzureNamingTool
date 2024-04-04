@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build Docker image
-        run: docker build -t azure-naming-tool .
+        run: docker build -t azurenamingtool .
     
       - name: Build and deploy Container App
         uses: azure/container-apps-deploy-action@v1
