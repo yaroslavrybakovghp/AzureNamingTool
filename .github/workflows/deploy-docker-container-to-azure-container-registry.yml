@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Deploy Docker container to Azure Container Registry
 
 on:
   push:
