@@ -1,4 +1,4 @@
-name: Deploy Docker container to Azure Container Registry
+name: Deploy Docker Container to Azure Container Registry
 
 on:
   push:
