@@ -18,6 +18,12 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: docker build -t azure-naming-tool .
     
       - name: Build and deploy Container App
         uses: azure/container-apps-deploy-action@v1
