@@ -23,6 +23,6 @@ jobs:
         uses: azure/container-apps-deploy-action@v1
         with:
           appSourcePath: ${{ github.workspace }}/src
-          acrName: myregistry
-          containerAppName: my-container-app
-          resourceGroup: my-rg
+          acrName: ${{ secrets.ACRNAME }}
+          containerAppName: ${{ secrets.CONTAINERAPPNAME }}
+          resourceGroup: ${{ secrets.RESOURCEGROUP }}
